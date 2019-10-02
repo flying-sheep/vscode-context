@@ -1,0 +1,54 @@
+{
+    "name": "context",
+    "displayName": "ConTeXt",
+    "description": "Language support for ConTeXt typesetting.",
+    "version": "0.0.1",
+    "publisher": "flying-sheep",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "context",
+                "aliases": [
+                    "ConTeXt",
+                    "context"
+                ],
+                "extensions": [
+                    ".ctx",
+                    ".mkii",
+                    ".mkiv"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "context",
+                "scopeName": "text.context",
+                "path": "./syntaxes/context.tmLanguage.json"
+            }
+        ]
+    },
+    "capabilities": {
+        "documentSymbolProvider": "true"
+    },
+    "activationEvents": [
+        "onLanguage:context"
+    ],
+    "main": "./out/src/main.js",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.36",
+        "typescript": "^3.6.3"
+    }
+}

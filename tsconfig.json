@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"forceConsistentCasingInFileNames": true,
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"module": "commonjs",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "out",
+		"rootDir": ".",
+		"sourceMap": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"target": "es2017",
+		"baseUrl": "./",
+		"typeRoots": ["./types", "./node_modules/@types"]
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
