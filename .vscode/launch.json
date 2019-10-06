@@ -17,6 +17,25 @@
                 "${workspaceFolder}/out/src/**/*.js"
             ],
             "preLaunchTask":"npm: compile"
-        }
+        },
+        {
+            "name": "Tests",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/src/test",
+                "--disable-extensions",
+                "--extensionDevelopmentPath=${workspaceFolder}",
+                "--extensionTestsPath=${workspaceFolder}/out/src/test"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm: compile",
+            "skipFiles": ["<node_internals>/**"]
+        },
     ]
 }

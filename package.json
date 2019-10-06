@@ -48,7 +48,13 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^12.7.11",
+        "typescript": "^3.6.3",
         "vscode": "^1.1.36",
-        "typescript": "^3.6.3"
+        "vscode-test": "^1.2.0"
+    },
+    "dependencies": {
+        "fast-glob": "^3.0.4"
     }
 }
