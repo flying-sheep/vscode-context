@@ -4,8 +4,11 @@
     "description": "Language support for ConTeXt typesetting.",
     "version": "0.0.1",
     "publisher": "flying-sheep",
+    "icon": "images/context-logo.png",
+    "url" : "https://github.com/flying-sheep/vscode-context",
+    "repository": "github:flying-sheep/vscode-context",
     "engines": {
-        "vscode": "^1.38.0"
+        "vscode": "^1.37.0"
     },
     "categories": [
         "Programming Languages"
