@@ -17,16 +17,14 @@
         "languages": [
             {
                 "id": "context",
-                "aliases": [
-                    "ConTeXt",
-                    "context"
-                ],
-                "extensions": [
-                    ".ctx",
-                    ".mkii",
-                    ".mkiv"
-                ],
+                "aliases": ["ConTeXt", "context"],
+                "extensions": [".ctx", ".mkii", ".mkiv"],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "bibtex",
+                "aliases": ["BibTeX", "bibtex"],
+                "extensions": [".bib"]
             }
         ],
         "grammars": [
@@ -34,6 +32,11 @@
                 "language": "context",
                 "scopeName": "text.context",
                 "path": "./syntaxes/context.tmLanguage.json"
+            },
+            {
+                "language": "bibtex",
+                "scopeName": "text.bibtex",
+                "path": "./syntaxes/bibtex.tmLanguage.json"
             }
         ]
     },
