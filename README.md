@@ -1,3 +1,6 @@
+> [!WARNING]
+> Superseded by https://github.com/flying-sheep/digestif-vscode
+
 VS Code ConTeXt support
 =======================
 
